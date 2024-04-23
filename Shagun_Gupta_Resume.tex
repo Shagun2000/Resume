@@ -1,0 +1,216 @@
+%-------------------------
+% Resume in Latex
+% Author : Shagun Gupta
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadings}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Shagun Gupta}} & Email : \href{mailto:shagung7220@gmail.com}{shagung7220@gmail.com}\\
+  \href{http://shagun2000.github.io/My_Portfolio/}{http://shagun2000.github.io} & Mobile : \href{tel:+91-9050899678}{+91-9050899678} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadings
+      {Guru Jambheshwar University of science and Technology}{Hisar,India}
+      {Master of Computer Applications;  CGPA: 8.6}{Nov. 2021 -- Sep. 2023}
+    \resumeSubheadings
+      {Chaudhary Bansi Lal University}{Bhiwani,India}
+      {Bachelor of Science with Computer Science;  CGPA: 7.9}{July. 2018 -- Aug. 2021}
+      \resumeSubHeadingListEnd
+
+
+%-----------Project Work-----------------
+\section{PROJECT WORK}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Sentiment Analysis}{Sep 2023 - Present}{}{}
+      \resumeItemListStart
+         \resumeItem{Data Collection}
+          {Collected product review data from relevant websites/e-commerce platforms using Web scraping tools.}
+        \resumeItem{Data Analysis}
+          {Analysed text data to determine whether sentiment is positive,negative or neutral using NLP.}
+        \resumeItem{Evaluation}
+          {Evaluated extracted features against a ground truth or manual labelling process.}
+        \resumeItem{Data Models}
+          {Implemented LSTM, GRU, SVM, Naive Bayes like developed models to classify sentimets of product reviews.}
+      \resumeItemListEnd
+      
+
+    \resumeSubheading
+      {Survival Prediction}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Data Exploration}
+          {Perform data exploration and data visualization to understand the dataset. }
+        \resumeItem{Implementations}
+          {Bulk data pre-processing and evaluate models SVM, KNN, Logistic Regression to predict the survival of passengers.}
+        
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Price Forecasting}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Data Pre-processing}
+          {Pre-processed the data to learn the patterns and relationships between features and target variable.}
+        \resumeItem{Influencing Factors}
+          {Generate factors that most significantly influence house prices and finally implement to predict house prices.}
+      \resumeItemListEnd
+   
+
+
+      
+     \resumeSubHeadingListEnd
+
+      %-----------EDUCATION-----------------
+\section{Internships/Training}
+  \resumeSubHeadingListStart
+    \resumeSubheadings
+      {Artificial Intelligence}{NIELIT,India}
+      {Python}{}
+    \resumeSubheadings
+      {Full Stack Web-Developement}{E-karma,India}
+      {Web Designing Fundamentals}{}
+    \resumeSubheadings
+      {Machine Learning}{Devtown in collaboartion with Microsoft learn,India}
+      {Data analysis Fundamentals}{}
+
+      \resumeSubHeadingListEnd
+      
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{:  Python, SQL}
+      \hfill
+      }
+    \item{
+      \textbf{Technologies}{: Web Scraping, Machine Learning, Web Developement}
+      \hfill
+      }
+    \item{
+      \textbf{Developer Tools}{: Google Colab, Pycharm, VsCode, PowerBi, Jupyter Notebook}
+       \hfill
+      }
+  \resumeSubHeadingListEnd
+
+%--------Achievements------------
+\section{ACHIEVMENTS}
+  \resumeSubHeadingsListStart
+    \item{
+      \textbf{Research Paper}{:  URL-Based Sentiment Analysis of Product Reviews 
+Using LSTM and GRU | 
+ICMLDE 2023 | Procedia 
+Computer Science Journal, 
+Elsevier}
+  
+    }
+  \resumeSubHeadingsListStart
+    \item{
+      \textbf{Award}{: Best ranking achiever in the entire university for the master's degree}
+      }
+
+
+%-------------------------------------------
+\end{document}
